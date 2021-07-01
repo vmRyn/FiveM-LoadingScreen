@@ -1,0 +1,16 @@
+:root {
+    --background-contrast: 95%;
+    --background-blur: 5px;
+    --loadbar-color: #111111;
+    --loadbar-progress-color: red;
+    --loadbar-height: 28px;
+    --footer-font-color: rgb(255, 255, 255, 5);
+    --footer-font-size: 24px;
+    --fadeTo-Color: black;
+    --ImageOne: url('../images/bg1.png');
+    --ImageTwo: url('../images/bg2.png');
+    --ImageThree: url('../images/bg3.png');
+    --ImageFour: url('../images/bg4.png');
+    --ImageFive: url('../images/bg5.png');
+    --ImageSix: url('../images/bg6.png');
+}

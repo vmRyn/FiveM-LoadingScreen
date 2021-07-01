@@ -1,0 +1,246 @@
+/***************************
+    BODY START
+***************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Lato');
+* {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backface-visibility: hidden;
+    animation-name: bgSlide;
+    animation-direction: alternate-reverse;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    -o-animation-timing-function: ease-in-out;
+    background-color: var(--fadeTo-Color);
+    background-image: var(--ImageOne);
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 1920px;
+    height: 1080px;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+#myAudio {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 1915px;
+    height: 1000px;
+}
+
+@keyframes bgSlide {
+    0% {
+        background-image: var(--ImageOne);
+    }
+    20% {
+        background-image: var(--ImageTwo);
+    }
+    40% {
+        background-image: var(--ImageThree);
+    }
+    60% {
+        background-image: var(--ImageFour);
+    }
+    80% {
+        background-image: var(--ImageFive);
+    }
+    100% {
+        background-image: var(--ImageSix);
+    }
+}
+
+.blur {
+    -webkit-filter: blur(var(--background-blur)) contrast(var(--background-contrast));
+    filter: blur(var(--background-blur)) contrast(var(--background-contrast));
+}
+
+hr {
+    height: 6px;
+    background-color: var(--loadbar-progress-color);
+    border: none;
+}
+
+.logo {
+    width: 320px;
+    width: 320px;
+}
+
+.Rynxd {
+    width: 5%;
+    background-color: var(--loadbar-progress-color);
+    height: var(--loadbar-height);
+    position: absolute;
+    left: 10%;
+}
+
+
+/***************************
+    BODY END
+***************************/
+
+
+/***************************
+    FONT/TEXT START
+***************************/
+
+h1 {
+    color: white;
+    font-family: Poppins;
+    font-weight: lighter;
+}
+
+h5 {
+    font-family: Poppins;
+    font-weight: lighter;
+}
+
+p {
+    font-family: Poppins;
+}
+
+
+/***************************
+    FONT/TEXT END
+***************************/
+
+
+/***************************
+    CONTAINERS/BOX START
+***************************/
+
+#container {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    text-align: center;
+}
+
+#containerservertitle {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    text-align: center;
+}
+
+#servertext {
+    top: 10.1%;
+    left: 50%;
+    transform: translate(-0%, -115%);
+}
+
+#containersongname {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+}
+
+#containerloading {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 92.8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    text-align: center;
+    width: 96.3%;
+    height: var(--loadbar-height);
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+#containerloadingtext {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 93.89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+}
+
+#discordlink {
+    color: var(--footer-font-color);
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#websitelink {
+    color: var(--footer-font-color);
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#ruletext {
+    color: var(--footer-font-color);
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#rule1 {
+    color: var(--footer-font-color);
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#bottom_nav {
+    width: 90%;
+    vertical-align: text-bottom;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    z-index: 9999;
+}
+
+
+/***************************
+    CONTAINERS/BOX END
+***************************/
