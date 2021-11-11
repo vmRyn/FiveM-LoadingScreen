@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/config.css" type="text/css">
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="css/backgrounds.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -18,27 +20,18 @@
     <div class='blur' id="bg">
     </div>
 
-    <video autoplay muted loop id="myVideo">
-        <source src="./videos/video.mp4" type="video/mp4">
-      </video>
-
     <audio autoplay loop id="myAudio">
         <source src="./audios/audio.mp3" type="audio/mp3">
-      </audio>
+    </audio>
 
     <div id="container">
-        <img class="logo" id="mainlogo">
+        <img class="logo" src="/images/NTLogo.png">
     </div>
 
-    <div id="containerservertitle">
-        <div id="servertext">
-            <h5 id="servertitle"></h5>
-        </div>
-    </div>
-
-    <div id="containersongname">
-        <h5>Playing Now:</h5>
-        <h5 id="songname"></h5>
+    <div class="section-top">
+        <center>
+            <h6>Space to Pause/Unpause Music</p>
+        </center>
     </div>
 
     <div id="containerloading">
@@ -47,8 +40,31 @@
         </div>
     </div>
 
-    <script src="js/config.js"></script>
+    <script>
+        var play = true;
+
+        var myAudio = document.getElementById("myAudio");
+
+        function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar                    
+                    if (play) {
+                        myAudio.pause();
+                        play = false;
+                    } else {
+                        myAudio.play();
+                        play = true;
+                    }
+                    break;
+            }
+            return false;
+        }
+
+        window.addEventListener("keydown", onKeyDown, false);
+    </script>
+
     <script src="js/app.js"></script>
+    <script src="js/snowflake-effect.js"></script>
 </body>
 
 </html>

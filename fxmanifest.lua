@@ -21,7 +21,9 @@ files {
     'images/bg5.png',
     'images/bg6.png', 
     'images/logo.png',
+    'images/NTLogo.png',
     'audios/audio.mp3',
+    'audios/audio2.mp3',
     'videos/video.mp4'
 }
 

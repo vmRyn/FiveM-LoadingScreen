@@ -4,6 +4,7 @@
 document.getElementById('mainlogo').src = config.text.mainlogo;
 document.getElementById('servertitle').innerHTML = config.text.servertitle;
 document.getElementById('songname').innerHTML = config.text.songname;
+document.getElementById('pausetext').innerHTML = config.text.pausetext;
 
 var audio = `<div data-video=${music.videoID} data-autoplay="1" data-loop="1" id="youtube-audio"> </div>`;
 if (music.music === true) {

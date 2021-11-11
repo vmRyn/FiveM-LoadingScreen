@@ -11,20 +11,20 @@
 body {
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    backface-visibility: hidden;
     animation-name: bgSlide;
-    animation-direction: alternate-reverse;
-    animation-duration: 15s;
+    animation-direction: normal;
+    animation-duration: 18s;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-play-state: running;
-    -o-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in;
     background-color: var(--fadeTo-Color);
     background-image: var(--ImageOne);
 }
@@ -49,22 +49,19 @@ body {
 
 @keyframes bgSlide {
     0% {
-        background-image: var(--ImageOne);
+        background-image: var(--ImageOne), var(--ImageTwo);
     }
     20% {
-        background-image: var(--ImageTwo);
+        background-image: var(--ImageTwo), var(--ImageThree);
     }
     40% {
-        background-image: var(--ImageThree);
+        background-image: var(--ImageThree), var(--ImageFour);
     }
     60% {
-        background-image: var(--ImageFour);
+        background-image: var(--ImageFour), var(--ImageFive);
     }
     80% {
-        background-image: var(--ImageFive);
-    }
-    100% {
-        background-image: var(--ImageSix);
+        background-image: var(--ImageFive), var(--ImageOne);
     }
 }
 
@@ -111,10 +108,30 @@ h1 {
 h5 {
     font-family: Poppins;
     font-weight: lighter;
+    font-size: 15px;
 }
 
 p {
     font-family: Poppins;
+}
+
+.section-top p {
+    font-family: Poppins;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    top: 25px;
+}
+
+.section-top h6 {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    text-transform: uppercase;
+    color: rgb(241, 235, 235);
+    text-align: center;
+    position: relative;
+    top: 25px;
 }
 
 
@@ -158,11 +175,12 @@ p {
 #containersongname {
     text-shadow: 2px 2px 5px var(--fadeTo-Color);
     position: absolute;
+    text-transform: uppercase;
     color: rgb(241, 235, 235);
     top: 83%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 25px;
+    font-size: 10px;
     text-align: center;
 }
 

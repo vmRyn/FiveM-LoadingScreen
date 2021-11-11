@@ -1,3 +1,3 @@
-const audio = document.getElementById('audio')
+const audio = document.getElementById('myAudio')
 app.audioElement = audio;
 app.audioElement.volume = 0;

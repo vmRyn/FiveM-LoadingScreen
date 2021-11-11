@@ -1,6 +1,6 @@
 :root {
     --background-contrast: 95%;
-    --background-blur: 5px;
+    --background-blur: 50px;
     --loadbar-color: #111111;
     --loadbar-progress-color: red;
     --loadbar-height: 28px;
