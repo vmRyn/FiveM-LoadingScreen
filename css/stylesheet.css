@@ -89,6 +89,33 @@ hr {
     left: 10%;
 }
 
+/***************************
+    VIDEO START
+***************************/
+.videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.videoSize {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+}
+
+/***************************
+    VIDEO END
+***************************/
+
+
 
 /***************************
     BODY END
