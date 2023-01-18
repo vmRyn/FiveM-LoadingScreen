@@ -20,18 +20,14 @@
     <div class='blur' id="bg">
     </div>
 
-    <audio autoplay loop id="myAudio">
-        <source src="./audios/audio.mp3" type="audio/mp3">
-    </audio>
-
-    <div id="container">
-        <img class="logo" src="/images/NTLogo.png">
-    </div>
-
     <div class="section-top">
         <center>
             <h6>Space to Pause/Unpause Music</p>
         </center>
+    </div>
+
+    <div id="container">
+        <img class="logo" src="/images/NTLogo.png">
     </div>
 
     <div id="containerloading">
@@ -39,6 +35,10 @@
             <div class="indeterminate deep-purple accent-1"></div>
         </div>
     </div>
+
+    <audio autoplay id="myAudio">
+        <source src="./audios/audio2.mp3" type="audio/mp3">
+    </audio>
 
     <script>
         var play = true;
@@ -64,7 +64,6 @@
     </script>
 
     <script src="js/app.js"></script>
-    <script src="js/snowflake-effect.js"></script>
 </body>
 
 </html>
