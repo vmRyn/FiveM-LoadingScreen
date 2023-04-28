@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 games { 'rdr3', 'gta5' }
 
-author 'Ryn'
-description 'a FiveM Loading Screen'
-version '1.0.0'
+author 'Ryn#2512'
+description 'a Standalone FiveM Loading Screen'
+version '1.5.0'
 
 files {
     'index.html',
