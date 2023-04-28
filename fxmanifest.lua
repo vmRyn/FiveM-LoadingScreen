@@ -16,8 +16,7 @@ files {
     'js/fullscreen-video.js',
     'js/snowflake-effect.js',
     'images/logo.png',
-    'audios/audio.mp3',
-    'audios/audio2.mp3',
+    'audios/intro.mp3',
     'videos/Load.mp4',
     'videos/Load2.mp4',
     'client/client.lua'
