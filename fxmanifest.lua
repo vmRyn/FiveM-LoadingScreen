@@ -11,20 +11,16 @@ files {
     'css/config.css',
     'js/config.js',
     'js/app.js',
+    'js/index.js',
     'js/music.js',
     'js/fullscreen-video.js',
     'js/snowflake-effect.js',
-    'images/bg1.png', 
-    'images/bg2.png', 
-    'images/bg3.png', 
-    'images/bg4.png', 
-    'images/bg5.png',
-    'images/bg6.png', 
     'images/logo.png',
-    'images/NTLogo.png',
     'audios/audio.mp3',
     'audios/audio2.mp3',
-    'videos/video.mp4'
+    'videos/Load.mp4',
+    'videos/Load2.mp4',
+    'client/client.lua'
 }
 
 loadscreen 'index.html'

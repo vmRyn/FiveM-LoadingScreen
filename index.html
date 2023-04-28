@@ -13,31 +13,47 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class='blur' id="bg">
-    </div>
+    <div id="wrapper">
+        <div class="section-top">
+            <center>
+                <h6>Space to Pause/Unpause Music</p>
+            </center>
+        </div>
 
-    <div class="section-top">
-        <center>
-            <h6>Space to Pause/Unpause Music</p>
-        </center>
-    </div>
+        <div id="container">
+            <img class="logo" src="./images/logo.png">
+        </div>
 
-    <div id="container">
-        <img class="logo" src="/images/NTLogo.png">
+        <video id="esx_intro" width="100%" autoplay muted>
+            <source src="videos/Load.mp4" type="video/webm">
+            <script>
+                var video = document.currentScript.parentElement;
+                video.volume = 0.01;
+                </script>
+        </video>
+        <video id="esx_loop" width="100%" loop muted>
+            <source src="videos/Load.mp4" type="video/webm">
+            <script>
+                var video = document.currentScript.parentElement;
+                video.volume = 0.01;
+                </script>
+        </video>
     </div>
 
     <div id="containerloading">
-        <div class="progress deep-purple accent-3">
-            <div class="indeterminate deep-purple accent-1"></div>
+        <div class="progress yellow accent-3">
+            <div class="indeterminate yellow accent-1"></div>
         </div>
     </div>
 
     <audio autoplay id="myAudio">
-        <source src="./audios/audio2.mp3" type="audio/mp3">
+        <source src="./audios/song.mp3" type="audio/mp3">
     </audio>
 
     <script>
